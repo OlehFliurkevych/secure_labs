@@ -1,0 +1,4 @@
+q,w,e,r,t;a,s,d,f,z;p,o,i,u,y;l,k,h,m,n;x,c,v,b,g
+m,l,p,o,k;n,z,i,u,y;h,b,x,g,v;t,f,c,d,r;q,w,e,a,s
+q,a,z,w,s;x,c,d,e,r;f,v,b,g,t;y,h,n,m,u;i,k,l,o,p
+p,l,m,k,o;i,n,u,h,b;y,g,v,t,f;c,x,d,r,e;w,s,q,a,z
