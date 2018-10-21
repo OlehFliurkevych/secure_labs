@@ -28,11 +28,11 @@ for c in key:
     key_dict.append([c,i])
     i+=1
     key_dict.sort()
-print('\n',key_dict, '\n')
+#print('\n',key_dict, '\n')
 
 text_decryp = text
 #output sypher
-print('pasito \n-------------')
+print('\nsypher \n-------------')
 syphered_text = ''
 for e in key_dict:
     for w in res:
@@ -58,7 +58,7 @@ for c in syphered_text:
     if i == count:
         key_num +=1
         i=0
-print('DE spasito \n-------------')
+print('Desypher \n-------------')
 for i in range(len(desypher_dict)):
     desypher_dict[i] = "".join(desypher_dict[i])
 print(''.join(desypher_dict))
