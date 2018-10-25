@@ -1,5 +1,5 @@
 def create_dictionary(file, re):
-    f = open(file, 'r')
+    f = open(file, 'r', 100, 'utf-8-sig')
     a = f.readline().replace('\n', '').split(' ')
     b = f.readline().replace('\n', '').split(' ')
     dic = {}
@@ -16,7 +16,7 @@ def create_dictionary(file, re):
 
 
 def sypher(text, dict):
-    f = open('punct.txt', 'r')
+    f = open('punct.txt', 'r', 100, 'utf-8-sig')
     x = f.readline().replace('\n', '').split(' ')
     for y in x:
         text = text.replace(y, '')
@@ -30,14 +30,14 @@ def sypher(text, dict):
     return str
 
 
-f = open('ukr_text.txt', 'r')
+f = open('ukr_text.txt', 'r', 100, 'utf-8-sig')
 text = f.read().strip().replace(' ', '')
 
 print('Ukrainian text\n')
 ukr_sypher = sypher(text, create_dictionary('ukr_dic.txt', False))
 print(ukr_sypher)
 print('\nEnglish text\n')
-text = open('eng_text.txt', 'r').read().strip()
+text = open('eng_text.txt', 'r', 100, 'utf-8-sig').read().strip()
 eng_sypher = sypher(text, create_dictionary('eng_dict.txt', False))
 print(eng_sypher)
 print('\nUkrainian desypher\n')

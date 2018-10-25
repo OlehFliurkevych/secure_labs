@@ -12,9 +12,9 @@ def sypher_duo(str,k1,k2,k3,k4):
     return result
 
 f = open('keys.txt','r')
-text = open('lab_text.txt','r').read().replace('/n','').replace(' ','').lower()
+text = open('lab_text.txt','r', 100, 'utf-8-sig').read().replace('/n','').replace(' ','').lower()
 text = text.replace('j','i')
-f1 = open('punct.txt', 'r')
+f1 = open('punct.txt', 'r', 100, 'utf-8-sig')
 x = f1.readline().replace('\n', '').split(' ')
 for y in x:
     text = text.replace(y, '')
